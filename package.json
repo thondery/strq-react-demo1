@@ -1,0 +1,24 @@
+{
+  "name": "strq-react-demo1",
+  "version": "1.0.0",
+  "description": "StrQ React Demo1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thondery/strq-react-demo1.git"
+  },
+  "keywords": [
+    "StrQ",
+    "React",
+    "ES2015"
+  ],
+  "author": "thondery <thondery@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thondery/strq-react-demo1/issues"
+  },
+  "homepage": "https://github.com/thondery/strq-react-demo1#readme"
+}
