@@ -10,28 +10,28 @@ var modules = {
 
 module.exports = {
   paths: {
-	dist: {
-	  base: dist
-	},
+    dist: {
+      base: dist
+    },
 	assets: {
-	  base: assets
-	}
+      base: assets
+    }
   },
   vendor: {
-	modules: [
-	  modules.react,
+    modules: [
+      modules.react,
       modules.reactDOM
-	]
+    ]
   },
   clean: [
-	dist + '/index.+(js|min.js|min.js.map)'
+    dist + '/index.+(js|min.js|min.js.map)'
   ],
   webpack: webpackConfig,
   server: {
-	host: 'localhost',
-	port: 8989,
-	livereload: false,
-	directoryListing: false,
-	open: true
+    host: 'localhost',
+    port: 8989,
+    livereload: false,
+    directoryListing: false,
+    open: true
   }
 };
