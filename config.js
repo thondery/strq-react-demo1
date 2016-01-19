@@ -13,7 +13,7 @@ module.exports = {
     dist: {
       base: dist
     },
-	assets: {
+    assets: {
       base: assets
     }
   },
