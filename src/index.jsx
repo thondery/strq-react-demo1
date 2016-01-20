@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { 
-  Router, 
-  Route, 
-  IndexRoute, 
-  Link, 
-  browserHistory,
+import {
+  Router,
+  Route,
+  IndexRoute,
+  Link,
   hashHistory
 } from 'react-router';
 import NotFound from './pages/notfound';
@@ -25,7 +24,7 @@ class App extends Component {
     };
     this.clickChange = this.clickChange.bind(this);
   }
-  
+
   clickChange (evt) {
     let _this = this;
     let newState = {
@@ -33,7 +32,7 @@ class App extends Component {
     };
     _this.setState(newState);
   }
-  
+
   render () {
     return (
       <div>
@@ -41,7 +40,12 @@ class App extends Component {
         <div className="master">
           <ul>
               <li><Link to={`/`} onClick={this.clickChange}>HomePage</Link></li>
-              <li><Link to={`/lession1`} activeClassName="active" onClick={this.clickChange}>Lession1</Link></li>
+              <li>
+                <Link to={`/lession1`}
+                  activeClassName="active"
+                  onClick={this.clickChange}
+                >Lession1</Link>
+              </li>
           </ul>
         </div>
         <div className="detail">
@@ -50,7 +54,7 @@ class App extends Component {
       </div>
     );
   }
-  
+
 }
 
 ReactDOM.render((
