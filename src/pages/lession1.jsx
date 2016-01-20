@@ -1,6 +1,7 @@
 import React, {
   Component
 } from 'react';
+import IBox from '../components/ibox';
 
 class Lession1 extends Component {
 
@@ -25,20 +26,12 @@ class Lession1 extends Component {
     console.log('this.state.id从' + prevState.id + '改为' + this.state.id);
   }
 
-  //componentWillReceiveProps () {
-
-  //}
-
-  /*shouldComponentUpdate (nextState) {
-    console.log(nextState);
-    return nextState.title !== this.props.title;
-  }*/
-
   render () {
     return (
       <div>
         <h1>Lession1</h1>
         <p>this.state.id = {this.state.id};</p>
+        <IBox name={this.state.id} />
       </div>
     );
   }
